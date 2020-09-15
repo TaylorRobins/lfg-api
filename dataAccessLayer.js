@@ -93,11 +93,11 @@ const updateOne = function (query, newPost) {
   }
 
   if (newProduct.game) {
-    newProductQuery.game = newProduct.game;
+    newPostQuery.game = newPost.game;
   }
 
   if (newProduct.info) {
-    newProductQuery.info = newProduct.info;
+    newPostQuery.info = newPost.info;
   }
 
   return new Promise((resolve, reject) => {

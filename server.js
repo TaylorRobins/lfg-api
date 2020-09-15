@@ -105,7 +105,7 @@ app.put("/api/posts/:id", async (request, response) => {
   };
 
   try {
-    await dataAccessLayer.updateOne(productQuery, body);
+    await dataAccessLayer.updateOne(postQuery, body);
   } catch (error) {
     response.status(404).send(`Post with id ${postId} not found!`);
     return;
